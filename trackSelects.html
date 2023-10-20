@@ -1,0 +1,8 @@
+<script>
+    document.querySelectorAll("select").forEach(function(elem){
+    elem.addEventListener("change", function(e){
+        var selectLabel = e.target.labels[0].innerText;
+        _paq.push(['trackEvent',"Wybór opcji",selectLabel,e.target.selectedOptions[0].innerText]);
+    });
+});
+</script>
